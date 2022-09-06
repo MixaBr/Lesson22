@@ -16,8 +16,7 @@ class CalonMixin:
             print("Салон закрыт")
 
 class BuildingWithCalonMixin(Building,CalonMixin):
-    def __init__(self, doors, windows, floors):
-        super(BuildingWithCalonMixin, self).__init__(floors, windows, doors)
+    pass
 
 hws = BuildingWithCalonMixin(3, 15, 17)
 hws.time_work(10, 21, 20)
